@@ -1,6 +1,6 @@
 # Compare sorting speeds across languages
 
-This repository benchmarks the same sorting dominated workflow in several programming
+This repository benchmarks the same sorting dominated workload in several programming
 languages.
 
 Consider a vector $V$ of $n$ random numbers uniformly distributed between $0$ and $1$. What
@@ -13,8 +13,8 @@ I compute the difference between runtime with and without sorting to infer the s
 runtime. For high performing languages on this benchmark, the vast majority of the time is
 spent sorting (typically 80-90%).
 
-I choose to use a sorting heavy workflow rather than simpler microbenchmarks to increase
-fairness across languages and benchmarking styles. By running each workflow on the order of
+I choose to use a sorting heavy workload rather than simpler microbenchmarks to increase
+fairness across languages and benchmarking styles. By running each workload on the order of
 a second, benchmarking artifacts are greatly reduced.
 
 Some languages are given more numbers to sort than other languages, but these differences
