@@ -12,7 +12,7 @@ function data(commands = [
         `RScript script.R`,
         `java Script.java`])
 
-    cd(joinpath(dirname(@__DIR__), "src")) do
+    cd(joinpath(@__DIR__, "src")) do
         map(commands) do c
             print(c)
             @time s = String(read(c))
