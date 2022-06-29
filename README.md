@@ -25,7 +25,7 @@ each implementation.
 
 ## Limitations
 
-This benchmark, while more realisitc than man sorting bencharks, is still a microbenchmark,
+This benchmark, while more realisitc than many sorting bencharks, is still a microbenchmark,
 and as such may contian benchmarking artifacts different than those found in production
 code.
 
