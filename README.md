@@ -21,6 +21,9 @@ Some languages are given more numbers to sort than other languages, but these di
 are canceled by differences in speed resulting in a similar amount of processing time for
 each implementation.
 
+These result are from sorting vectors of 64 bit floating point numbers on a 2019
+MacBook Air with a 1.6 GHz Dual-Core Intel Core i5 processor and 8 GB memory.
+
 ![Julia and Java outperform other languages](figure.png)
 
 ## Limitations
@@ -36,8 +39,3 @@ of benchmarks for the Julia language specifically.
 Each data point above is the result of a single trial. Lines would be smoother and more
 reproducible if they were computed as a mean or median of three trials. Taking this to an
 extreme, however, is likely to reintroduce benchmarking artifacts.
-
-## Machine specs
-
-All benchmarks were run on a 2019 Mac with a 1.6 GHz Dual-Core Intel Core i5 processor and
-8 GB memory.
