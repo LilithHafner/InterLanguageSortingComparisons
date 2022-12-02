@@ -9,7 +9,7 @@ Return the average of `m` trials.
 function f(n, m)
     x = zeros(n)
     y = 0.0
-    for i in 1:m
+    for _ in 1:m
         rand!(x)
         sort!(x)
         y += sum(x .* eachindex(x))
@@ -25,7 +25,7 @@ Same as `f`, but without sorting.
 function g(n, m)
     x = zeros(n)
     y = 0.0
-    for i in 1:m
+    for _ in 1:m
         rand!(x)
 
         y += sum(x .* eachindex(x))
