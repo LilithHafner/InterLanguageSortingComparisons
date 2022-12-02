@@ -16,6 +16,7 @@ function data(commands = [
         map(commands) do c
             print(c)
             @time s = String(read(c))
+            println(s)
             i = findfirst('\n', s)
             head = replace(s[begin:i-1], r"\([^()]*\)"=>"")
             tail = s[i+1:end]
