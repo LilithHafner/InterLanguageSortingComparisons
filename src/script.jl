@@ -1,5 +1,11 @@
 using Random
 
+"""
+    f(n, m)
+
+Estimate the expected the dot product of `1:n` and `sort(rand(n))` divided by `n^2`.
+Return the average of `m` trials.
+"""
 function f(n, m)
     x = zeros(n)
     y = 0.0
@@ -11,6 +17,11 @@ function f(n, m)
     y / m / n^2
 end
 
+"""
+    g(n, m)
+
+Same as `f`, but without sorting.
+"""
 function g(n, m)
     x = zeros(n)
     y = 0.0
