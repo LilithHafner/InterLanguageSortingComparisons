@@ -33,6 +33,7 @@ fn g(n: i32, m: i32) -> f64 {
 
     for _ in 0..m {
         rng.fill(&mut x[..]);
+
         y += dotindex(&x);
     }
     let n = n as f64;
