@@ -1,9 +1,11 @@
-use std::time::Instant;
 use rand::{Rng, SeedableRng};
 use rand_xoshiro::Xoshiro256PlusPlus;
+use std::time::Instant;
 
 fn dotindex(x: &[f64]) -> f64 {
-    x.iter().enumerate().fold(0.0, |acc, (i, v)| v.mul_add(i as f64, acc))
+    x.iter()
+        .enumerate()
+        .fold(0.0, |acc, (i, v)| v.mul_add(i as f64, acc))
 }
 
 fn f(n: i32, m: i32) -> f64 {
@@ -54,11 +56,12 @@ fn main() {
 
         let delta = tf - tg;
 
-        println!("{} {:5.1} ({:2.0}%) {}",
-                 i,
-                 1e9 * delta / 3_i32.pow(n) as f64,
-                 100.0 * delta / tf,
-                 vf - vg,
+        println!(
+            "{} {:5.1} ({:2.0}%) {}",
+            i,
+            1e9 * delta / 3_i32.pow(n) as f64,
+            100.0 * delta / tf,
+            vf - vg,
         );
     }
 }
