@@ -57,7 +57,6 @@ fn main() {
 
         let delta = tf - tg;
 
-
         println!(
             "{} {:5.1} ({:2.0}%) {}",
             i,
