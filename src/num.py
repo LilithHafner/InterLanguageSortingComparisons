@@ -19,7 +19,7 @@ def g(n, m):
         y += sum(x * np.arange(n))
     return y / m / n**2
 
-print("python/numpy " + version.replace("\n", ""))
+print("numpy/python " + version.replace("\n", ""))
 N = 13
 for i in range(1,N+1):
     tf0 = perf_counter_ns()

@@ -1,3 +1,4 @@
 **.DS_Store
 src/a.out
-src/script_rs/target
+src/*/target
+src/*/Cargo.lock
