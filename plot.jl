@@ -2,8 +2,8 @@ using GLMakie
 using CSV: File
 
 function data(commands = [
-        `julia-1.9 script.jl`,
-        `julia script.jl`,
+        `julia +alpha script.jl`,
+        `julia +1.8 script.jl`,
         `python3 script.py`,
         `python3 num.py`,
         `bash -c 'gcc script.c && ./a.out'`,
