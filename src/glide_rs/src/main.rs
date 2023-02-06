@@ -17,7 +17,7 @@ fn f(n: i32, m: i32) -> f64 {
 
     for _ in 0..m {
         rng.fill(&mut x[..]);
-        x.sort_unstable_by(|a, b| a.partial_cmp(b).unwrap());
+        glidesort::sort_by(&mut x, |a, b| a.partial_cmp(b).unwrap());
         y += dotindex(&x);
     }
     let n = n as f64;
