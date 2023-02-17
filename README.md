@@ -24,7 +24,12 @@ each implementation.
 These result are from sorting vectors of 64 bit floating point numbers on a 2019
 MacBook Air with a 1.6 GHz Dual-Core Intel Core i5 processor and 8 GB memory.
 
-![Julia and Java outperform other languages](figure.png)
+![Julia and Rust outperform other languages](figure.png)
+
+The notion of stability doesn't really make sense in the context of sorting IEEE floating
+point numbers in ascending order except insofar as wheather or not NaN values with differing
+payloads are reordered. That said, I classify the following entrants as "stable":
+Julia, glidesort (but not Rust), Java, and Python (but not NumPy)
 
 ## Limitations
 
